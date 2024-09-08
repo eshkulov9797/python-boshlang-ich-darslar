@@ -5,3 +5,4 @@ if a == b:
     print("1")
 else:
     print(a-b+2)
+print("dastur yakunlandi")
