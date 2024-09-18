@@ -6,10 +6,13 @@ dictionary = {'int':'butun son','for':'takrorlanish sikli','if':'shart operatori
 
 davlatlar = {'O\'zbekiston':'Toshkent','Qozog\'iston':'Astana','Qirg\'iziston':'Boku','Tojikiston':'Dushanbe'}
 
-print("\n Davlat nomlari :::\n")
-for key in davlatlar.keys():
-    print(key)
+poytaxt = input("Davlatni kiriting kiriting : ")
 
-print("\nPoytaxtlar:::\n")
-for poytaxt in davlatlar.values():
-    print(poytaxt)
+shart = davlatlar.get(poytaxt)
+if shart == None:
+    print("kechirasiz bunaqa malumot yoq")
+else:
+    print(f"{poytaxt.title()} ning poytaxti {shart.title()}")
+    
+    
+    
