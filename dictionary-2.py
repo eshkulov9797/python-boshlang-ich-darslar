@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
-mahsulot = {'olma':10000,'behi':15000,'sabzi':3000,'guruch':14000,'olcha':5000}
+dictionary = {'int':'butun son','for':'takrorlanish sikli','if':'shart operatori','else':'yoki shart operatori','def':'funksiya'}
 
-
-royxat = ['sabzi','guruch','olcha']
-
-for narsa in mahsulot:
-    if narsa in royxat:
-        print(f"{narsa.title()} {mahsulot[narsa]}")
-        
+for key,value in sorted(dictionary.items()):
+    print(f"{key} - {value}")
