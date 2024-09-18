@@ -1,18 +1,13 @@
 # -*- coding: utf-8 -*-
-dictionary = {'int':'butun son','for':'takrorlanish sikli','if':'shart operatori','else':'yoki shart operatori','def':'funksiya'}
+royxat = {'osh':15000,'shashlik':24000,'manti':20000,'shorva':12000}
+zakaz = []
 
-#for key,value in sorted(dictionary.items()):
-#   print(f"{key} - {value}")
+for taom in range(3):
+    zakaz.append(input("Taomni kiriting:"))
 
-davlatlar = {'O\'zbekiston':'Toshkent','Qozog\'iston':'Astana','Qirg\'iziston':'Boku','Tojikiston':'Dushanbe'}
+i = 0
 
-poytaxt = input("Davlatni kiriting kiriting : ")
-
-shart = davlatlar.get(poytaxt)
-if shart == None:
-    print("kechirasiz bunaqa malumot yoq")
-else:
-    print(f"{poytaxt.title()} ning poytaxti {shart.title()}")
-    
-    
-    
+for sq in zakaz:
+    if sq in royxat:
+        print(f"{sq}ning narxi {royxat[sq]}")
+        
