@@ -1,16 +1,22 @@
 # -*- coding: utf-8 -*-
-def bahola(ismlar):
-    baholar = {}
+
+def katta_harf(ismlar):
+    i = 0
+    katta_isim = []
+    
     while ismlar:
-        ism = ismlar.pop()
-        baho = input(f"Talaba {ism.title()}ning bahosini kiriting:")
-        baholar[ism] = baho
-    return baholar
+        katta_isim.append(ismlar[i].title())
+        i = i + 1
+    
+    return katta_isim
+    
+        
+        
+    
+    
+    
 
-talabalar = ['ali','vali','sobir','axadjon']
-hammasi = {}
+ismlar = ['ali','vali','anton','jalil']
 
-hammasi = bahola(talabalar)
-print(hammasi)
-
-
+ismlar = katta_harf(ismlar)
+print(ismlar)
